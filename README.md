@@ -42,6 +42,6 @@ Utilities:
 
 - exploreROIs: outputs a cell array of all correlated brain regions and organizes them by model, linearity, and direction of correlation.
 
-get_ROIs: a simple script to batch orthviews_fitBOLD over different models.
+- get_ROIs: a simple script to batch orthviews_fitBOLD over different models.
 
 
