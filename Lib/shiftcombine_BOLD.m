@@ -1,7 +1,7 @@
-function [Subjects_BOLD,shifts,pooledBOLD]=shiftcombine_BOLD(ROIs,timings,marsbar,dir,sub,shift,combine)
+function [Subjects_BOLD,shifts,pooledBOLD,sub_coord]=shiftcombine_BOLD(ROIs,timings,marsbar,dir,sub,shift,combine,fit)
 
 for ROI_loop=1:size(ROIs,2)
-ROI_shifts{1,ROI_loop}=BOLD(ROIs{ROI_loop},timings,marsbar,dir,sub,shift);
+[ROI_shifts{1,ROI_loop},~,~,~,sub_coord]=extract_fitBOLD(fit);
 end
 
 for person_i =1:size(sub,2)
