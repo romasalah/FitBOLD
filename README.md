@@ -33,4 +33,15 @@ Output:
 - Plotting of Confidence Intervals of regression statistics and parameter estimates.
 - plotting of tested cross validation, R-square, and RMSE.
 
+Utilities:
+- Orthviews_fitBOLD: a very handy function to view the 3D maps of the correlated regions, you can choose to view only specific models, only linear or quadratic correlations, only positive or negative correlations. You can also view overlay the correlated regions over all NiFTI masks in a directory or over specific masks indicated in the input. 
+
+- Comparemodel: a handy function to output regression statistics with confidence intervals and compares performance of different models.
+
+- mapnii: a simple script to create a map of brain regions using all NiFTI images in a folder. Requires XjView toolbox.  http://www.alivelearn.net/xjview/download/
+
+- exploreROIs: outputs a cell array of all correlated brain regions and organizes them by model, linearity, and direction of correlation.
+
+get_ROIs: a simple script to batch orthviews_fitBOLD over different models.
+
 
